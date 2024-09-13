@@ -1,0 +1,62 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input CreateTaskDto {
+  description: String
+  isActive: Boolean!
+  taskName: String!
+  userId: String!
+}
+
+input CreateUserDto {
+  name: String!
+  role: String
+  userId: String!
+}
+
+type Mutation {
+  create(createTaskInput: CreateTaskDto!): Task!
+  createUser(createUserInput: CreateUserDto!): User!
+  delete(id: Float!): Task!
+  deleteUser(id: String!): User!
+  update(id: ID!, updateTaskInput: UpdateTaskDto!): Task!
+  updateUser(id: String!, updateUserInput: UpdateUserDto!): User!
+}
+
+type Query {
+  findByUserId(userId: String!): [Task!]!
+  task(id: ID!): Task!
+  tasks: [Task!]!
+  users(role: String): [User!]!
+}
+
+type Task {
+  description: String!
+  id: ID!
+  isActive: Boolean!
+  taskName: String!
+  user: User!
+  userId: String!
+}
+
+input UpdateTaskDto {
+  description: String
+  isActive: Boolean
+  taskName: String
+  userId: String
+}
+
+input UpdateUserDto {
+  name: String
+  role: String
+  userId: String
+}
+
+type User {
+  _id: ID!
+  name: String!
+  role: String!
+  tasks: [Task!]!
+  userId: String!
+}
