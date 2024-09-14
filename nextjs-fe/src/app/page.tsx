@@ -1,17 +1,8 @@
-"use client"
-
-import Tasks from "./components/tasks";
-import Users from "./components/users";
-
+import Tasks from "./components/task/tasks";
 
 export default function Home() {
-
   return (
-    <div className="flex flex-col justify-center items-center">
-      <h1>Playing with graphQl</h1>
-      <p className='mb-5'>Trying Query and Mutation</p>
-
-      <Users/>
+    <div className="flex flex-col pb-5 justify-center items-center">
       <Tasks />
     </div>
   );

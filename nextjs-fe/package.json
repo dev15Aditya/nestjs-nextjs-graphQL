@@ -11,14 +11,20 @@
   "dependencies": {
     "@apollo/client": "^3.11.8",
     "@apollo/experimental-nextjs-app-support": "^0.11.3",
+    "@nextui-org/react": "^2.4.7",
+    "framer-motion": "^11.5.4",
     "graphql": "^16.9.0",
     "next": "14.2.9",
     "react": "^18",
-    "react-dom": "^18"
+    "react-beautiful-dnd": "^13.1.1",
+    "react-beautiful-dnd-next": "^11.0.5",
+    "react-dom": "^18",
+    "react-toastify": "^10.0.5"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
+    "@types/react-beautiful-dnd": "^13.1.8",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.9",
